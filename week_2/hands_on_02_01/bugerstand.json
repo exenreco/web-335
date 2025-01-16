@@ -1,0 +1,33 @@
+{
+  "customers": [
+    {
+      "_id": "101",
+      "firstName": "John",
+      "lastName": "Doe",
+      "orders": [
+        {
+          "_id": "501",
+          "burgerName": "Cheeseburger",
+          "price": 5.99
+        },
+        {
+          "_id": "502",
+          "burgerName": "Veggie Burger",
+          "price": 6.49
+        }
+      ]
+    },
+    {
+      "_id": "102",
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "orders": [
+        {
+          "_id": "503",
+          "burgerName": "Double Bacon Burger",
+          "price": 8.99
+        }
+      ]
+    }
+  ]
+}
