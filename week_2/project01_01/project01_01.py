@@ -1,7 +1,7 @@
 """
 Author: Exenreco Bell
 Date: January 16, 2025
-File Name: project01-01.py
+File Name: project01_01.py
 Description: This program prints a motivational quote and credits the author.
 """
 
