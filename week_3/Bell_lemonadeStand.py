@@ -19,8 +19,7 @@ def calculate_cost(lemons_cost: float, sugar_cost: float) -> float:
 
       @returns:
 
-        total_cost [number]: The total cost of sugar and lemons,
-                          otherwise prints an error
+        total_cost [number]: The total cost of sugar and lemons, otherwise prints an error
   '''
 
   # lemon cost and sugar cost must be of type int or float
@@ -54,8 +53,7 @@ def calculate_profit(lemons_cost: float, sugar_cost: float, selling_price: float
 
       @returns:
 
-        profit [number]: The amount made after subtracting the cost
-                         of sugar and lemons from the total price.
+        profit [number]: The amount made after subtracting the cost of sugar and lemons from the total price.
   '''
 
   # Calculating total cost
