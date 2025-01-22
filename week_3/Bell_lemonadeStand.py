@@ -6,7 +6,7 @@ Description: This program calculates the cost and profit of making lemonade usin
 """
 
 
-def calculate_cost(lemons_cost, sugar_cost):
+def calculate_cost(lemons_cost: float, sugar_cost: float) -> float:
   ''' CALCULATE COST
 
       Function that calculates the total cost of making lemonade
@@ -23,22 +23,23 @@ def calculate_cost(lemons_cost, sugar_cost):
                           otherwise prints an error
   '''
 
-  # lemon cost and sugar cost must be given
-  if lemons_cost and sugar_cost:
+  # lemon cost and sugar cost must be of type int or float
+  if lemons_cost and isinstance(lemons_cost, float) or isinstance(lemons_cost, int) and sugar_cost and isinstance(sugar_cost, float) or isinstance(sugar_cost, int):
 
     # Returning the total cost rounded to 2 decimals
     return round(lemons_cost + sugar_cost, 2)
 
   else:
     # invalid type or unspecified param
-    print(f"to calculate the cost a number is expected for both parameters:")
-    print(f"  - for the cost of lemons - a {type(lemons_cost)} was given!")
-    print(f"  - for the cost of sugar - a {type(sugar_cost)} was given!")
+    msg = f"to calculate the cost a number is expected for both parameters:"
+    typ1 = f"  - for the cost of lemons - a {type(lemons_cost)} was given!"
+    typ2 = f"  - for the cost of sugar - a {type(sugar_cost)} was given!"
+    print(f"{msg}\n{typ1}\n{typ2}")
     exit('Error (1)')
 
 
 
-def calculate_profit(lemons_cost, sugar_cost, selling_price):
+def calculate_profit(lemons_cost: float, sugar_cost: float, selling_price: float) -> float:
   ''' CALCULATE PROFIT
 
       Function to calculate the profit from selling lemonade
@@ -60,7 +61,7 @@ def calculate_profit(lemons_cost, sugar_cost, selling_price):
   # Calculating total cost
   total_cost = calculate_cost(lemons_cost, sugar_cost)
 
-  if total_cost and selling_price:
+  if total_cost and isinstance(total_cost, float) or isinstance(total_cost, int) and selling_price and isinstance(selling_price, float) or isinstance(selling_price, int):
 
     # Calculating profit
     profit = round(selling_price - total_cost, 2)
