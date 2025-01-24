@@ -1,0 +1,51 @@
+{
+  "viewers": [
+    {
+      "_id":            "viewer1",
+      "firstName":      "John",
+      "lastName":       "Doe",
+      "moviesWatched":  [
+        {
+          "_id":        "movie1",
+          "movieName":  "Inception",
+          "genre":      ["Sci-Fi"],
+          "rating":     {
+            "_id":          "movie-1-rating",
+            "movieId":      "movie1",
+            "viewerId":     "viewer1",
+            "ratingScore":  5
+          }
+        },
+        {
+          "_id":        "movie2",
+          "movieName":  "Titanic",
+          "genre":      ["Romance", "adventure"],
+          "rating":     {
+            "_id":          "movie-2-rating",
+            "movieId":      "movie2",
+            "viewerId":     "viewer1",
+            "ratingScore":  null
+          }
+        }
+      ]
+    },
+    {
+      "_id":        "viewer2",
+      "firstName":  "Jane",
+      "lastName":   "Smith",
+      "moviesWatched":      [
+        {
+          "_id":        "movie3",
+          "movieName":  "The Matrix",
+          "genre":      ["Action", "Sci-Fi"],
+          "rating":     {
+            "_id":          "movie-3-rating",
+            "movieId":      "movie3",
+            "viewerId":     "viewer2",
+            "ratingScore":  5
+          }
+        }
+      ]
+    }
+  ]
+}
