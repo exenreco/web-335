@@ -1,0 +1,56 @@
+{
+  "users": [
+    {
+      "_id":        "user1",
+      "firstName":  "Alice",
+      "lastName":   "Smith",
+      "devices":    [
+        {
+          "_id":        "device1",
+          "deviceName": "iPhone 14",
+          "deviceType": "Smartphone",
+          "charger":    [
+            { "_id": "charger_id", "chargerType": "Lightning", "voltage": "5.3v"},
+            { "_id": "charger_id", "chargerType": "Lightning", "voltage": "5.0v"},
+            { "_id": "charger_id", "chargerType": "Lightning", "voltage": "4.5v"}
+          ]
+        },
+        {
+          "_id":        "device2",
+          "deviceName": "Mac Book Pro",
+          "deviceType": "Laptop",
+          "charger":    [
+            { "_id": "charger_id", "chargerType": "USB-C", "voltage": "18v"},
+            { "_id": "charger_id", "chargerType": "USB-c", "voltage": "12v"}
+          ]
+        }
+      ]
+    },
+    {
+      "_id":        "user2",
+      "firstName":  "Exenreco",
+      "lastName":   "Bell",
+      "devices":    [
+        {
+          "_id":        "device3",
+          "deviceName": "Galaxy Tab S10",
+          "deviceType": "Tablet",
+          "charger":    [
+            { "_id": "charger_id", "chargerType": "USB-C", "voltage": "5.9v" },
+            { "_id": "charger_id", "chargerType": "USB-C", "voltage": "5.5v" },
+            { "_id": "charger_id", "chargerType": "USB-C", "voltage": "5.0v" }
+          ]
+        },
+        {
+          "_id":        "device4",
+          "deviceName": "DELL XPS-15",
+          "deviceType": "Laptop",
+          "charger":    [
+            { "_id": "charger_id", "chargerType": "USB-C", "voltage": "18v" },
+            { "_id": "charger_id", "chargerType": "USB-C", "voltage": "12v" }
+          ]
+        }
+      ]
+    }
+  ]
+}
