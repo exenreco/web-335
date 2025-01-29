@@ -6,7 +6,7 @@
  */
 
 /**
- * User document clean-up. 
+ * User document clean-up.
  */
 db.users.deleteOne({"email": "jbach@me.com"})
 db.users.deleteOne({"email": "lbeethoven@me.com"})
@@ -16,7 +16,7 @@ db.users.deleteOne({"email": "rwagner@me.com"})
 db.users.deleteOne({"email": "cdebussy@me.com"})
 
 /**
- * Create six User documents. 
+ * Create six User documents.
  */
 bach = {
 	"firstName": "Johann",
