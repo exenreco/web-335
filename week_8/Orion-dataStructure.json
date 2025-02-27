@@ -1,0 +1,93 @@
+{
+  "users": [
+      {
+          "_id": "user-001",
+          "role": "subscriber",
+          "email": "user@example.com",
+          "password": "hashed_password",
+          "lastName": "Doe",
+          "firstName": "John",
+          "wishlist": [
+              "wishlist-001",
+              "wishlist-002"
+          ],
+          "ratings": [
+              {
+                  "book_id": "book-001",
+                  "rating_id": "rating-001"
+              }
+          ],
+          "reviews": [
+              {
+                  "book_id": "book-002",
+                  "review_id": "review-003"
+              }
+          ],
+          "readHistory": [
+              {
+                  "book_id": "book-003",
+                  "history_id": "history-001"
+              }
+          ],
+          "borrowedBooks": [
+              "borrowedId-001"
+          ]
+      }
+  ],
+  "books": [
+      {
+          "_id": "book-001",
+          "ISBN": "978-3-16-148410-0",
+          "title": "The Great Adventure",
+          "cover": "cover_image_url.jpg",
+          "genres": [
+              "Fiction",
+              "Adventure"
+          ],
+          "author": "Jane Smith",
+          "ratings": [
+              {
+                  "rating_id": "rating-001",
+                  "user_id": "user-001",
+                  "rating": 4,
+                  "timestamp": "2025-02-12T10:00:00Z"
+              }
+          ],
+          "reviews": [
+              {
+                  "review_id": "review-002",
+                  "user_id": "user-002",
+                  "review": "Amazing book!",
+                  "timestamp": "2025-02-12T10:00:00Z"
+              }
+          ],
+          "publisher": "BookHouse Publishers",
+          "read_history": [
+              {
+                  "history_id": "history-003",
+                  "user_id": "user-003",
+                  "currentPage": "user-003",
+                  "startDate": "2025-01-05",
+                  "completeDate": "2025-01-05"
+              }
+          ],
+          "pageCount": 350,
+          "totalCopies": 10,
+          "availableCopies": 5
+      }
+  ],
+  "wishlists": [
+      {
+          "_id": "wishlist-001",
+          "user_id": "user-001",
+          "book_id": "book-001",
+          "timestamp": "2025-02-20T10:00:00Z"
+      },
+      {
+          "_id": "wishlist-002",
+          "user_id": "user-001",
+          "book_id": "book-003",
+          "timestamp": "2025-02-21T12:00:00Z"
+      }
+  ]
+}

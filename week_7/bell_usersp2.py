@@ -228,7 +228,7 @@ with Database( databaseURI=uri, databaseName=name ) as db:
 
   # Write the Python code to prove the document was created.
   print(f"\nAdd new user:\n{addedUser}")
-  print(f"\nNew user Object:\n{ db.findOne({"employeeId": newUser['employeeId']}) }")
+  print(f"\nNew user Object:\n{ db.findOne({'employeeId': newUser['employeeId']}) }")
 
   # Write the Python code to update the email address of the document you created in step 3.
   # updates new user email address
@@ -239,13 +239,14 @@ with Database( databaseURI=uri, databaseName=name ) as db:
 
   # Write the Python code to prove the document was updated.
   print(f"\nUpdating New User: {newUserUpdate}")
-  print(f"\nNew user Email should be different:\n {db.findOne({"employeeId": newUser['employeeId']})}")
+  print(f"\nNew user Email should be different:\n {db.findOne({'employeeId': newUser['employeeId']})}")
+
 
   # Write the Python code to delete the document that was created in step 3.
   deleteNewUser = db.deleteOne({"employeeId": newUser['employeeId']})
 
   #Write the Python code to prove the document was deleted.
   print(f"Deleting new user: {deleteNewUser}")
-  print(f"\nNew User Was deleted:\n {db.findOne({"employeeId": newUser['employeeId']})}")
+  print(f"\nNew User Was deleted:\n {db.findOne({'employeeId': newUser['employeeId']})}")
 
   # The database connection is automatically closed after exiting the `with` block.
